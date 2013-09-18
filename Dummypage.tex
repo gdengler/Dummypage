@@ -1,0 +1,40 @@
+%Dummypage by HSR-Stud, Hannes und Gregor
+%Zur Verwendung während dem HSR Studium
+\documentclass{article}
+\title{Dummypage}
+\author{HSR-Stud, Hannes, Gregor}
+%Include Header
+\include{header/zusammenfassung}
+\input{header/hyperref}
+\input{header/listings}
+
+\usepackage{standalone}
+\usepackage{cite}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{circuitikz}
+\usepackage{etex}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,fit,petri}
+\usetikzlibrary{calc,intersections,through,backgrounds,graphs}
+\usetikzlibrary{patterns,decorations.pathreplacing}
+
+\newcommand{\versioninfo}{$Revision: 1 $ - powered by \LaTeX}
+\newcommand{\hoch}{$^{\wedge}$}
+\newcommand{\formelbuch}[1]{$_{\textcolor{red}{\mbox{\small{S#1}}}}$}
+
+%Document Anfang
+\begin{document}
+
+\input{tex/basics}
+\input{tex/vector}
+\input{tex/complex}
+\input{tex/statistik}
+\input{tex/ownFunctions}
+\input{idiotenseite/idiotenseiteinclude}
+\input{tex/systemspezifischeBefehle}
+\input{tex/funktionen}
+\input{tex/arrays}
+\input{tex/plotten}
+\input{tex/programmieren}
+\input{tex/beispiele}
+\end{document}

@@ -1,0 +1,69 @@
+\subsection{Bildbearbeitung}
+
+\begin{minipage}{0.6\textwidth}
+  \begin{tabular}{|p{2.5cm}| p{3.5cm}| p{4cm}|}
+  \hline
+  Befehl & Beschreibung & Parameter\\ \hline \hline
+  imread(filename, fmt) & liest Bilder in Matlab ein& filename = Name das files, fmt = Format \\ \hline
+  imwrite(A, filename)& Macht ein neues Bildfile & A = Matlabimage, filename = Name der Zieldatei\\ \hline
+  image(C) & Zeigt das Bild an & c = Matrix mit Bildinformationen\\ \hline
+  imagesc(C)& zeigt das Bild an, die Bilddaten werden auf den vollen Range aufskaliert & c = Matrix mit Bildinformationen \\ \hline
+  imshow(I) & zeigt Bild in neuer Figure an & I = Matlabbild \\ \hline
+  imshowpair(A,B)  & Macht ein Bild, welches die Unterschiede zwischen A und B zeigt & A,B = Matlabbilder \\ \hline
+  imfinfo(I) & Gibt ein File mit Infos zum Bild aus & I = Bild \\ \hline
+  imnoise(I, type)& Fügt dem Bild Rauschen hinzu & I = Matlabbild, type = Type des Rauschens gemäss Tabelle \\ \hline
+  im2double(I) & Macht aus einem Bild ein Doublebild & I = Matlabbild \\ \hline
+  im2int16(I) & Macht aus einem Bild ein int16 Bild & I = Matlabbild \\ \hline
+  im2uint8(I) & Macht aus einem Bild ein uint8 Bild & I = Matlabbild \\ \hline
+  im2uint16(I) & Macht aus einem Bild ein uint16 Bild & I = Matlabbild \\ \hline
+  imresize(A, scale) & Macht ein neues Bild das scale mal A gross ist & A = Matlabbild, scale = Faktor \\ \hline
+  imrotate(A, angle) & Macht ein neues Bild das mit angle rotiert wurde & A = Matlabbild , angle = Winkel in Grad Gegenuhrzeigersinn \\ \hline 
+   
+  
+  
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\textbf{Unterstütze Formate imread}
+\begin{itemize}
+\item BMP Windows Bitmap
+\item CUR Cursor File
+\item GIF Graphics Interchange Format
+\item HDF4 Hierarchical Data Format
+\item ICO Icon File
+\item JPEG Joint Photographic Experts Group
+\item JPEG 2000 Joint Photografic Experts Group 2000
+\item PBM Portable Bitmap
+\item PCX Windows Paintbrush
+\item PGM Portable Graymap
+\item PNG Portable Network Graphics
+\item PPM Portable Pixmap
+\item RAS Sun Raster
+\item TIFF Tagged Image File Format
+\item XWD X Window Dump
+\end{itemize}
+\textbf{Arten von Noise} \\ 
+\begin{tabular}{p{2cm}|p{4cm}}
+\hline
+gaussian & Weisses Rauschen mit konstantem Mittelwert und Varianz \\ \hline
+localvar & Weisses Gaussrauschen mit Mittelwert 0 und Varianzabhängier Intensität \\ \hline
+poisson & Poisson Rauschen \\ \hline
+salt \& pepper & On and off Pixels \\ \hline
+speckle & Multiplicatives Rauschen\\ \hline
+\end{tabular}
+\\ 
+\\
+\textbf{Datentypen}
+
+\begin{tabular}{p{2cm}|p{4cm}}
+\hline
+Type & Name \\
+int8 & integer 8bit \\
+uint8 & unsigne integer 8bit \\
+int16 & integer 16bit \\
+uint16 & unsigned integer 16bit\\
+double & Double precision real number \\ \hline
+\end{tabular}
+
+\end{minipage}
